@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com formularios</title>
+</head>
+
+<body>
+
+    <h1>formularios</h1>
+<form>
+   <!--TIPO EMAIL-->
+
+<div>
+
+    <Label>E-mail</Label>
+    <input type="email" id="email" name="email" placeholder="E-mail"><br>
+    </div>
+    
+    <!--TIPO TEXT-->
+    <div>
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+    <br>
+<label for="snome">Sobrenome</label>
+<input type="text" name="snome" id="snome" placeholder="Sobrenome" required> <br><br>
+</div>
+
+<!--TIPO RADIO-->
+
+<div>
+<label><strong>Qual seu nivel de programador</strong></label><br><br>
+<label><input type="radio" name="Level" value="Dev Jr"> Dev Jr</label><br><br>
+<label><input type="radio" name="Level" value="Dev Mediano">Dev Mediano</label> <br><br>
+<label><input type="radio" name="Level" value="Dev senior">Dev senior</label> <br><br>
+</div>
+
+<!--TIPO SELECT PARA SELECIONAR ITENS-->
+
+<div>
+    <label for="Escolaridade"><strong>Sua Escolaridade</strong></label>
+    <select id="Escolaridade">
+        <option selected disabled value="">Selecione</option>
+    <option>Ensino basico</option>
+    <option>Ensino Medio</option>
+    <option>Ensino superior</option>
+    </select><br><br>
+</div>    
+
+<!--TIPO  CHECKBOX-->
+
+<div>
+<label><strong>Selecione as tecnologias que você conhece:</strong></label>
+<br><br>
+
+<input type="checkbox" id="tec1" name="tec1" value="Javascript">
+<label for="tec1">Javascript</label><br>
+
+<input type="checkbox" id="tec2" name="tec2" value="HTML"> 
+<label for="tec2">HTML</label> <br>
+
+<input type="checkbox" id="tec3" name="tec2" value="CSS">
+<label for="tec3">CSS</label> <br>
+
+<input type="checkbox" name="tec4" id="tec4" value="PHP">
+<label for="tec4">PHP</label> <br><br>
+
+</div>
+
+<!--TIPO DATE-->
+
+<div>
+<label for="Datas">Data nascimento</label>
+<input type="datetime-local" id="Data" name="Data"><br><br>
+
+</div>
+
+<input type="submit" value="Cadastrar"><br><br>
+</form>
+
+</body>
+
+</html>
